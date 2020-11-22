@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IMAGE PICKER</title>
+	<style>
+		body {
+			margin: 100px;
+			background-color: aqua;
+		}
+
+		.hai {
+			margin: 1% 38%;
+			padding: 10px;
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<select onchange="gantigambar();" class="hai" id="listgambar">
+		<option
+			value="https://media.suara.com/pictures/336x188/2019/10/25/dari-era-90-an-hingga-sekarang-inilah-45-kartun-jepang-terlaris.jpg">
+			PILIH KARTUN</option>
+		<option value="https://mmc.tirto.id/image/otf/700x0/2018/08/01/film-one-piece-wikipedia_ratio-16x9.jpg">ONE
+			PIECE</option>
+		<option value="https://assets.pikiran-rakyat.com/crop/0x0:0x0/750x500/photo/2020/08/06/942310047.jpg">DORAEMON
+		</option>
+		<option value="https://i.pinimg.com/originals/07/f2/c4/07f2c43e1afa3636d4c07ab3f3ae03ae.png">NARUTO SHIPUDDEN
+		</option>
+		<option
+			value="https://img.okezone.com/content/2018/03/13/598/1872062/belum-tamat-dragon-ball-super-akan-dibuat-lanjutannya-v8ezlIamBS.jpg">
+			DRAGON BALL Z</option>
+		<option
+			value="https://m.media-amazon.com/images/M/MV5BMGNmMWI4MGUtYmU0ZS00ZDkxLTgzMTAtZDU4YmQ1MDM3Y2IyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg">
+			INUYASA</option>
+		<option value="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2020/04/15/3234642178.jpg">SHINCHAN</option>
+	</select>
+
+	<br />
+	<img src="https://media.suara.com/pictures/336x188/2019/10/25/dari-era-90-an-hingga-sekarang-inilah-45-kartun-jepang-terlaris.jpg"
+		style="width: 90%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+
+</html>
